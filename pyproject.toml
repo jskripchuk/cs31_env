@@ -1,0 +1,57 @@
+[project]
+name = "cs31"
+version = "2026.1"
+description = "CS-31 Foundations for Artificial Intelligence — course environment (Tufts, Fall 2026)"
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    # --- Week 3: search -------------------------------------------------
+    "networkx>=3.4",
+
+    # --- Week 4: constraint programming ---------------------------------
+    "ortools>=9.11",
+
+    # --- Week 5: linear programming (CBC solver ships inside the wheel) --
+    "pulp>=3.0",
+
+    # --- Weeks 7-8: probability and Bayesian networks --------------------
+    "pgmpy>=1.0",
+
+    # --- Week 9: reinforcement learning ---------------------------------
+    #   toy-text extra provides Taxi and FrozenLake.
+    #   NOTE: Taxi-v3 is DEPRECATED as of gymnasium 1.3 -> use Taxi-v4.
+    "gymnasium[toy-text]>=1.1",
+
+    # --- Week 11: game theory and agent-based modelling ------------------
+    "nashpy>=0.0.40",
+    #   axelrod 4.14.0 added a hard dependency on torch (~2-3 GB).
+    #   Capped below it deliberately; see INSTRUCTOR_NOTES.md.
+    "axelrod>=4.11,<4.14",
+    #   Mesa 3.x API differs from older tutorials. Cap the major version.
+    "mesa>=3.1,<4",
+
+    # --- Week 10: agent architectures ------------------------------------
+    "py-trees>=2.2",
+
+    # --- Week 12: LLM agents ---------------------------------------------
+    #   The lab starts with raw `requests` against the HTTP endpoint to show
+    #   the interface, then pivots to the `openai` client. No vendor SDK:
+    #   the OpenAI wire format is the de facto convention that Groq,
+    #   OpenRouter, Ollama, vLLM and others all accept, so provider choice
+    #   is a base_url change rather than a rewrite. See INSTRUCTOR_NOTES.md.
+    "openai>=1.60",
+    "python-dotenv>=1.0",
+    "requests>=2.32",
+
+    # --- Everywhere -------------------------------------------------------
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+    "ipykernel>=6.29",
+
+    # --- Autograder --------------------------------------------------------
+    "otter-grader>=6.0",
+]
+
+[tool.uv]
+# Students should never resolve for themselves; uv.lock is the source of truth.
+package = false
