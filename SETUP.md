@@ -93,7 +93,7 @@ You should see something like `uv 0.12.5`. If you see "command not found" or "no
 
 ## Step 3 — Get the course folder and build the environment
 
-Download the course folder from Canvas and unzip it.
+Download the course folder from Github. Click the green button that says **Code** and then **Download Zip**. Unzip it.
 
 **Where you put it matters.** Put it somewhere with a short, simple path and **not** inside a cloud-synced folder:
 
