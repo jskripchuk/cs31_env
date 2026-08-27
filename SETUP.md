@@ -188,7 +188,7 @@ uv run python my_script.py
 
 The `uv run` prefix means you never have to "activate" anything — uv figures out which environment to use from the folder you are in.
 
-**When the course environment changes.** Occasionally a new library gets added for an upcoming lab. You will get an announcement. Download the updated course folder (or `git pull` if you are using git), then run:
+**When the course environment changes.** Occasionally a new library gets added for an upcoming lab. You will get an announcement. Download the updated course folder (or use git), then run:
 
 ```
 uv sync --compile-bytecode
