@@ -204,6 +204,14 @@ cd ~/cs31-project
 uv add pandas scikit-learn
 ```
 
+## AI Coding Assistants
+VSCode ships with AI features and AI coding assistants turned on by default. VSCode is a great IDE, but these features are opposed to the goals of the course where we want you to learn to program and reason about these systems on your own (see [AI Policy](https://www.cs.tufts.edu/cs/31/policy.html#:~:text=Collaboration%20and%20AI%20Policy)). 
+
+We've shipped the `.vscode/settings.json` file with the option flagged to disable these AI features. They're trivial to turn back on (much like how it is trivial to ask a question in ChatGPT), but we request that you do not and follow the course policy.
+
+If you find AI completions still appearing inside a lab notebook, tell us. It means the setting did not apply and we want to know.
+
+
 ---
 
 ## Troubleshooting
