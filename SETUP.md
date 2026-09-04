@@ -153,7 +153,7 @@ If you miss the notification, open the Extensions panel (the four-squares icon o
 
 ## Step 6 — Confirm VS Code found the right Python
 
-Look at the **bottom-right corner** of the VS Code window. It should mention `.venv`.
+Look at the **top center** of the VS Code window. It should mention `cs31_env`.
 
 If it does not, or if you are unsure:
 
@@ -167,7 +167,7 @@ If it does not, or if you are unsure:
 
 Open `labs/setup_test/check_env.ipynb` from the file list on the left.
 
-At the **top right** of the notebook, click where it says **Select Kernel**, choose **Python Environments**, and pick the `.venv` entry.
+At the **top right** of the notebook, click where it says **Select Kernel**, choose **Python Environments**, and pick the `cs31_env` entry (it has `.venv` in the path).
 
 Then click **Run All**.
 
