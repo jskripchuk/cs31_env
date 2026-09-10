@@ -1,1 +1,1 @@
-Each week, you'll drop this weeks folder in the notebooks directory.
+Each week, you'll download the .zip, and unzip it into your directory.
