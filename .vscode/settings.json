@@ -6,7 +6,8 @@
 
   "//windows": "VS Code resolves the POSIX path above on macOS/Linux. On Windows the interpreter lives at .venv\\Scripts\\python.exe; the Python extension resolves either form from the workspace .venv, but if a Windows student sees the wrong interpreter, have them run Python: Select Interpreter and pick the .venv entry once.",
 
-  //"jupyter.notebookFileRoot": "${workspaceFolder}",
+  "//": "jupyter.notebookFileRoot should not be ${workspaceFolder}",
+  "jupyter.notebookFileRoot": "${fileDirname}",
   "notebook.output.textLineLimit": 60,
 
   "files.exclude": {
